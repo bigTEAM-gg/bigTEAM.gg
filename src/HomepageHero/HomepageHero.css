@@ -1,0 +1,200 @@
+.hero {
+  transform-style: preserve-3d;
+}
+
+.heroContainer {
+  min-height: min(100vh - 8rem, 50rem);
+  max-height: min(100vh - 8rem, 50rem);
+  /* background: linear-gradient(to bottom, #20202c 0%,#515175 100%); */
+  /* contain: paint; */
+  transform-origin: 50% 100%;
+  transform-style: preserve-3d;
+}
+
+.hero .title svg {
+  /* transform: rotate3d(1, 0, 0, -30deg); */
+}
+
+/* .hero .title text {
+  animation: 
+    1s cubic-bezier(0.190, 1.000, 0.220, 1.000)  both text-reveal,
+    0.5s cubic-bezier(.36,.07,.19,.97) both text-shake;
+} */
+.hero .title text:nth-child(1) {
+  animation-delay: 0.0s, 2.25s;
+}
+.hero .title text:nth-child(2) {
+  animation-delay: 0.1s, 2.25s;
+}
+.hero .title text:nth-child(3) {
+  animation-delay: 0.2s, 2.25s;
+}
+.hero .title text:nth-child(4) {
+  animation-delay: 0.3s, 2.25s;
+}
+.hero .title text:nth-child(5) {
+  animation-delay: 0.4s, 2.25s;
+}
+.hero .title text:nth-child(6) {
+  animation-delay: 0.5s, 2.25s;
+}
+.hero .title text:nth-child(7) {
+  animation-delay: 0.6s, 2.25s;
+}
+
+.hero .title {
+  /* Oversize image to be 200% */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* tip the image over from the fullscreen position */
+  transform-origin: center top;
+  transform-style: preserve-3d;
+  transform: rotateX(285deg) translate3d(0, 120rem, -120rem) scale(4);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* text styles */
+  color: yellow;
+  font-family: 'Super Normal';
+  font-size: 10vw;
+  text-wrap: nowrap;
+  font-weight: bold;
+  transform: rotateX(285deg) translate3d(0, 200rem, -350vh) scale(6, 12);
+}
+
+.hero .roof {
+  /* Oversize image to be 200% */
+  position: absolute;
+  top: 0;
+  left: -50%;
+  bottom: 0;
+  right: -50%;
+  width: 200%;
+  /* Give cool background */
+  background-image: url("../../public/roof_tileable.png");
+  /* tip the image over from the fullscreen position */
+  transform-origin: center bottom;
+  transform: rotateX(95deg); /* science can't explain this it just looks better */
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+.hero .zilla {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  max-width: 80%;
+  max-height: 80%;
+  transform-origin: top center;
+  animation: 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) easeOutBack 1.25s both zilla-reveal;
+  transform: translate3d(-50%, -50%, -100rem) scale(4) rotate(0deg);
+}
+
+@keyframes zilla-reveal {
+  from {
+    transform: translate3d(-50%, -50%, -100rem) scale(4) rotate(90deg);
+  }
+  to {
+    transform: translate3d(-50%, -50%, -100rem) scale(4) rotate(0deg);
+  }
+}
+
+.hero .zilla > img {
+}
+
+.hero .zillaAttribution {
+  
+}
+
+
+.hero .skyline {
+  position: absolute;
+  bottom: 0;
+  left: -5%;
+  z-index: 1;
+  width: 110%;
+  min-width: 40rem;
+  aspect-ratio: 16/9;
+  max-height: 50%;
+  background-position: top center;
+  animation: just-shake 0.5s cubic-bezier(.36,.07,.19,.97) 2.25s both;
+  filter: drop-shadow(30px 10px 10px rgba(0,0,0,0.5));
+}
+
+.facade {
+  width: 100%;
+  height: 15rem;
+  background-image: url("../../public/facade_tileable.png");
+}
+
+@keyframes text-reveal {
+  from {
+    transform: rotate3d(1, 0, 0, -30deg) translateY(-200px);
+  }
+  to {
+    transform: rotate3d(1, 0, 0, -30deg) translateY(0px);
+  }
+}
+
+@keyframes text-shake {
+  10% {
+    transform: rotate3d(1, 0, 0, -30deg) translate3d(-1px, 0px, 0);
+  }
+  20% {
+    transform: rotate3d(1, 0, 0, -30deg) translate3d(2px, 0px, 0);
+  }
+  30% {
+    transform: rotate3d(1, 0, 0, -30deg) translate3d(-4px, 0px, 0);
+  }
+  40% {
+    transform: rotate3d(1, 0, 0, -30deg) translate3d(4px, 0px, 0);
+  }
+  50% {
+    transform: rotate3d(1, 0, 0, -30deg) translate3d(-4px, 0px, 0);
+  }
+  60% {
+    transform: rotate3d(1, 0, 0, -30deg) translate3d(4px, 0px, 0);
+  }
+  70% {
+    transform: rotate3d(1, 0, 0, -30deg) translate3d(-4px, 0px, 0);
+  }
+  80% {
+    transform: rotate3d(1, 0, 0, -30deg) translate3d(2px, 0px, 0);
+  }
+  90% {
+    transform: rotate3d(1, 0, 0, -30deg) translate3d(-1px, 0px, 0);
+  }
+}
+
+@keyframes just-shake {
+  10% {
+    transform: translate3d(-4px, 0px, 0);
+  }
+  20% {
+    transform: translate3d(4px, 0px, 0);
+  }
+  30% {
+    transform: translate3d(-4px, 0px, 0);
+  }
+  40% {
+    transform: translate3d(3px, 0px, 0);
+  }
+  50% {
+    transform: translate3d(-3px, 0px, 0);
+  }
+  60% {
+    transform: translate3d(2px, 0px, 0);
+  }
+  70% {
+    transform: translate3d(-2px, 0px, 0);
+  }
+  80% {
+    transform: translate3d(1px, 0px, 0);
+  }
+  90% {
+    transform: translate3d(-1px, 0px, 0);
+  }
+}

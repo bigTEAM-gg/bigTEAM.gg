@@ -1,52 +1,54 @@
 
 import React, { useEffect } from 'react';
 import './App.css';
+import Twitter from '@hackernoon/pixel-icon-library/icons/SVG/brands/twitter.svg';
+
+import HomepageHero from './HomepageHero';
 
 function App() {
 
   return (
     <div className="App">
-      <header className="hero">
-        <div className="title">
-          <svg
-            width="100%"
-            height="100%"
-            viewBox="0 0 450 100"
-            preserveAspectRatio="xMinYMid meet"
-          >
-            {"BIGTEAM".split('').map((letter, i) => (
-              <text
-                key={i}
-                x={450.0 / 7 * (i + 0.5)}
-                y="80"
-                fontSize="75"
-                fill="currentColor"
-                textAnchor="middle"
-              >
-                {letter}
-              </text>
-            ))}
-          </svg>
-        </div>
-        <div className="zilla">
-          <img className="z" src="/monsters/test.webp " />
-          <p className="zillaAttribution">Godzilla - Showa Era</p>
-        </div>
-        <div className="skyline" />
-      </header>
+      <HomepageHero />
       <nav>
-        <button type="button">
-          home
-        </button>
-        <button type="button">
-          about
-        </button>
-        <button type="button">
-          learn more
-        </button>
+        <div className="content">
+          <a href="#home">
+            <object data={Twitter} />
+            <span className="text">
+              About
+            </span>
+          </a>
+          <a href="#about">
+          <object data={Twitter} />
+            <span className="text">
+              Projects
+            </span>
+          </a>
+          <a href="#" className="title">
+            <span>
+              big
+            </span>
+            <span>
+              TEAM
+            </span>
+          </a>
+          <a href="#learn">
+            <object data={Twitter} />
+            <span className="text">
+              Services
+            </span>
+          </a>
+          <a href="#contact">
+            <object data={Twitter} />
+            <span className="text">
+              Contact
+            </span>
+          </a>
+        </div>
       </nav>
       <main>
         <h1>Welcome to big team</h1>
+        {/* <object data={Twitter} width="24" height="24"> </object> */}
       </main>
       {/* <HorizontalBannerRuling /> */}
       <footer>
@@ -68,7 +70,7 @@ const HorizontalBannerRuling = (props) => {
         {title}
       </div>
       <div className="strip" style={{ backgroundColor: 'skyblue' }}>
-        
+
       </div>
     </div>
   );

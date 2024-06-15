@@ -77,3 +77,13 @@ li {
 #__next {
   isolation: isolate;
 }
+
+/* default icon styles */
+object {
+  display: inline-block;
+  width: 1.15em;
+  height: 1.25em;
+  fill: currentColor;
+  stroke: currentColor;
+  pointer-events: none;
+}
