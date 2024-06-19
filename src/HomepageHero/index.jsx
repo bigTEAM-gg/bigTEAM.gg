@@ -32,7 +32,10 @@ const HomepageHero = (props) => {
           <img className="z" src="/monsters/test.webp " />
           <p className="zillaAttribution">Godzilla - Showa Era</p>
         </div>
+        <div className="challenger" />
         <div className="roof" />
+        <div className="cityScape" />
+        <div className="mountains" />
       </div>
       <div className="facade" />
     </header>

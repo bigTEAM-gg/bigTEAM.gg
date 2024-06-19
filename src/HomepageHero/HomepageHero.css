@@ -1,10 +1,11 @@
 .hero {
   transform-style: preserve-3d;
+  min-height: min(100vh - 8rem);
+  display: grid;
+  grid-template-rows: minmax(30rem, 80vh) 1fr;
 }
 
 .heroContainer {
-  min-height: min(100vh - 8rem, 50rem);
-  max-height: min(100vh - 8rem, 50rem);
   /* background: linear-gradient(to bottom, #20202c 0%,#515175 100%); */
   /* contain: paint; */
   transform-origin: 50% 100%;
@@ -75,10 +76,42 @@
   background-image: url("../../public/roof_tileable.png");
   /* tip the image over from the fullscreen position */
   transform-origin: center bottom;
-  transform: rotateX(95deg); /* science can't explain this it just looks better */
+  transform: rotateX(95deg) scaleY(0.25); /* science can't explain this it just looks better */
   transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.hero .challenger {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 10rem;
+  height: 10rem;
+  background-image: url("../../public/challenger.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translate3d(200%, 1rem, -8rem);
+}
+
+.hero .cityScape {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30rem;
+  background-image: url("../../public/skyline.png");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  transform: translate3d(0, 250rem, -600rem) scale(13);
+}
+
+.hero .mountains {
+
 }
 
 
@@ -90,7 +123,7 @@
   max-height: 80%;
   transform-origin: top center;
   animation: 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) easeOutBack 1.25s both zilla-reveal;
-  transform: translate3d(-50%, -50%, -100rem) scale(4) rotate(0deg);
+  transform: translate3d(-200%, -50%, -100rem) scale(4) rotate(0deg);
 }
 
 @keyframes zilla-reveal {
@@ -116,7 +149,6 @@
   left: -5%;
   z-index: 1;
   width: 110%;
-  min-width: 40rem;
   aspect-ratio: 16/9;
   max-height: 50%;
   background-position: top center;
@@ -126,8 +158,10 @@
 
 .facade {
   width: 100%;
-  height: 15rem;
   background-image: url("../../public/facade_tileable.png");
+  max-width: 100rem;
+  height: 100%;
+  margin: 0 auto;
 }
 
 @keyframes text-reveal {
