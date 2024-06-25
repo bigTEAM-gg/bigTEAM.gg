@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2bac831b.css",
+    "main.js": "/static/js/main.6281d09e.js",
+    "static/media/skyline.png": "/static/media/skyline.210ed54b6927dfca51cf.png",
+    "static/media/rubble.png": "/static/media/rubble.cdadb6684f65380cdc9b.png",
+    "static/media/Super Normal.ttf": "/static/media/Super Normal.0d9dab0506d46d8cc490.ttf",
+    "static/media/Star+Pattern+3.svg": "/static/media/Star+Pattern+3.b10abef9bc17b12bb55b.svg",
+    "static/media/repeatable_wave.webp": "/static/media/repeatable_wave.7dbc3d064810779900c3.webp",
+    "index.html": "/index.html",
+    "static/media/twitter.svg": "/static/media/twitter.a26130531a2f7d75048fa6cd260c8eb3.svg",
+    "main.2bac831b.css.map": "/static/css/main.2bac831b.css.map",
+    "main.6281d09e.js.map": "/static/js/main.6281d09e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2bac831b.css",
+    "static/js/main.6281d09e.js"
+  ]
+}
