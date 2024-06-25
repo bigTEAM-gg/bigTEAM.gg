@@ -22,7 +22,7 @@ html, body, #root, .App {
   transform-style: preserve-3d;
   perspective: 800px;
   perspective-origin: center;
-  background: linear-gradient(to bottom, #020111 60%,#20202c 100%);
+  background: linear-gradient(to bottom, #020111 10%,#3a3a52 100%);
 }
 
 nav {
@@ -33,6 +33,11 @@ nav {
   border: 0.5rem solid rgb(30 30 30);
   overflow: hidden;
   box-shadow: 12px 25px 50px 12px rgb(0 0 0 / 0.5);
+}
+
+a {
+  color: blue;
+  text-decoration: none; /* no underline */
 }
 
 nav > .content {
@@ -66,7 +71,7 @@ nav::before {
   width: 100%;
   background-image: url("../public/repeatable_wave.webp");
   opacity: 0.3;
-  /* animation: move-background 50s linear infinite; */
+  animation: move-background 50s linear infinite;
 }
 
 nav .title {
@@ -75,6 +80,12 @@ nav .title {
   font-size: 1.5rem;
   font-weight: bold;
   max-width: 100%;
+  transform: scale(0.0);
+  transition: transform 0.15s;
+}
+
+nav.sticky .title {
+  transform: scale(1.0);
 }
 
 nav .title > object {
@@ -92,11 +103,37 @@ nav .title > .text {
 }
 
 main {
-  /* DEBUG */
-  min-height: 300vh;
   background: black;
   z-index: 1;
   position: relative;
+}
+
+main .container {
+  display: grid;
+  place-items: center;
+}
+
+main .container .box {
+  font-family: 'Super Normal';
+  position: relative;
+  z-index: 3;
+  color: yellow;
+  background: black;
+  border: 0.5rem solid Olive;
+  border-top-right-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+  box-shadow: 0.5rem 0.5rem 10rem rgb(37, 37, 0);
+  margin: 1rem;
+  padding: 3rem;
+  min-width: 18rem;
+  text-align: center;
+
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 20rem;
 }
 
 .strips {

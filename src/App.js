@@ -1,30 +1,34 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './App.css';
 import Twitter from '@hackernoon/pixel-icon-library/icons/SVG/brands/twitter.svg';
 
 import HomepageHero from './HomepageHero';
+import MarioBox from './MarioBox';
+
 
 function App() {
 
+  const navRef = useRef();
+  const [isNavSticky, setIsNavSticky] = useState(false);
+  const onAppScroll = (e) => {
+    const element = navRef.current;
+    if (!element) return;
+
+    const rect = element.getBoundingClientRect();
+    
+    setIsNavSticky(rect.top <= 100);
+  }
+
+  // Check if nav sticky on first load
+  useEffect(onAppScroll, [])
+
   return (
-    <div className="App">
+    <div className="App" onScroll={onAppScroll}>
       <HomepageHero />
-      <nav>
+      <nav ref={navRef} className={isNavSticky ? 'sticky' : ''}>
         <div className="content">
-          <a href="#home">
-            <object data={Twitter} />
-            <span className="text">
-              About
-            </span>
-          </a>
-          <a href="#about">
-          <object data={Twitter} />
-            <span className="text">
-              Projects
-            </span>
-          </a>
-          <a href="#" className="title">
+          <a href="/" className="title">
             <span>
               big
             </span>
@@ -32,27 +36,24 @@ function App() {
               TEAM
             </span>
           </a>
-          <a href="#learn">
-            <object data={Twitter} />
-            <span className="text">
-              Services
-            </span>
-          </a>
-          <a href="#contact">
-            <object data={Twitter} />
-            <span className="text">
-              Contact
-            </span>
-          </a>
         </div>
       </nav>
       <main>
-        <h1>Welcome to big team</h1>
-        {/* <object data={Twitter} width="24" height="24"> </object> */}
+        <MarioBox style={{ minHeight: '100vh' }}>
+          <div className="container" style={{ minHeight: '100vh' }}>
+            <div className="box">
+              <h1>We're building something big</h1>
+              <p style={{ color: 'white', opacity: '0.5' }}>Coming Soon ...</p>
+              <img 
+                style={{ width: '2rem', aspectRatio: '1/1', filter: 'opacity(0.5)' }}
+                src="logo192.png"
+              />
+            </div>
+          </div>
+        </MarioBox>
       </main>
       {/* <HorizontalBannerRuling /> */}
       <footer>
-        <p>follow us on twitter</p>
       </footer>
     </div>
   );
