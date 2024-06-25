@@ -64,37 +64,17 @@
   transform: rotateX(285deg) translate3d(0, 200rem, -350vh) scale(6, 12);
 }
 
-.hero .roof {
-  /* Oversize image to be 200% */
+.hero .rubble {
   position: absolute;
-  top: 0;
-  left: -50%;
+  left: 0;
+  right: 0;
   bottom: 0;
-  right: -50%;
-  width: 200%;
-  /* Give cool background */
-  background-image: url("../../public/roof_tileable.png");
-  /* tip the image over from the fullscreen position */
-  transform-origin: center bottom;
-  transform: rotateX(95deg) scaleY(0.25); /* science can't explain this it just looks better */
-  transform-style: preserve-3d;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  max-width: 100rem;
-  margin: 0 auto;
-}
-
-.hero .challenger {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 10rem;
-  height: 10rem;
-  background-image: url("../../public/challenger.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  transform: translate3d(200%, 1rem, -8rem);
+  width: 100%;
+  height: 30rem;
+  background-image: url("../../public/rubble.png");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  transform: translate3d(0, 25rem, -60rem) scale(3);
 }
 
 .hero .cityScape {
@@ -154,14 +134,6 @@
   background-position: top center;
   animation: just-shake 0.5s cubic-bezier(.36,.07,.19,.97) 2.25s both;
   filter: drop-shadow(30px 10px 10px rgba(0,0,0,0.5));
-}
-
-.facade {
-  width: 100%;
-  background-image: url("../../public/facade_tileable.png");
-  max-width: 100rem;
-  height: 100%;
-  margin: 0 auto;
 }
 
 @keyframes text-reveal {

@@ -28,16 +28,14 @@ const HomepageHero = (props) => {
             ))}
           </svg>
         </div>
+        <div className="rubble" />
         <div className="zilla">
           <img className="z" src="/monsters/test.webp " />
           <p className="zillaAttribution">Godzilla - Showa Era</p>
         </div>
-        <div className="challenger" />
-        <div className="roof" />
         <div className="cityScape" />
         <div className="mountains" />
       </div>
-      <div className="facade" />
     </header>
   );
 }
