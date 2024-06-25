@@ -147,6 +147,12 @@ main .container .box {
   transform: translate(-50%, 0) rotate(-1deg);
 }
 
+footer {
+  height: 100%;
+  background: black;
+  position: relative;
+}
+
 @keyframes move-background {
   0% {
     background-position: 0% 0%;
