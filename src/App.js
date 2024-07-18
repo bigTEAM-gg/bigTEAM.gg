@@ -55,7 +55,7 @@ function App() {
               <p>
                 <a 
                   style={{ color: 'yellow', opacity: '0.75', textDecoration: 'underline' }} 
-                  href="bigteamvg.itch.io"
+                  href="https://bigteamvg.itch.io"
                 >
                   Itch
                 </a>
