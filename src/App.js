@@ -16,7 +16,7 @@ function App() {
     if (!element) return;
 
     const rect = element.getBoundingClientRect();
-    
+
     setIsNavSticky(rect.top <= 100);
   }
 
@@ -43,8 +43,24 @@ function App() {
           <div className="container" style={{ minHeight: '100vh' }}>
             <div className="box">
               <h1>We're building something big</h1>
-              <p style={{ color: 'white', opacity: '0.5' }}>Coming Soon ...</p>
-              <img 
+              <p style={{ color: 'white', opacity: '0.75' }}>Coming Soon ...</p>
+              <p style={{ color: 'white', opacity: '0.75' }}>
+                <a
+                 style={{ color: 'yellow', opacity: '0.75', textDecoration: 'underline' }} 
+                 href="https://twitter.com/bigTEAMvg"
+                >
+                  Twitter
+                </a>
+              </p>
+              <p>
+                <a 
+                  style={{ color: 'yellow', opacity: '0.75', textDecoration: 'underline' }} 
+                  href="bigteamvg.itch.io"
+                >
+                  Itch
+                </a>
+              </p>
+              <img
                 style={{ width: '2rem', aspectRatio: '1/1', filter: 'opacity(0.5)' }}
                 src="logo192.png"
               />
