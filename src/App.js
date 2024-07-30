@@ -69,7 +69,7 @@ function App() {
         </MarioBox>
       </main>
       {/* <HorizontalBannerRuling /> */}
-      <footer>
+      <footer style={{ display: 'none' }}>
       </footer>
     </div>
   );

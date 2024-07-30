@@ -5,7 +5,7 @@ import './HomepageHero.css';
 const HomepageHero = (props) => {
 
   return (
-    <header className="hero">
+    <header className="hero" style={{ display: 'none' }}>
       <div className="heroContainer">
         <div className="title">
           <svg
