@@ -44,7 +44,7 @@ function App() {
             <div className="box" style={{ maxWidth: '40rem' }}>
               <h1>We're building something big</h1>
               <p style={{ color: 'white', opacity: '0.75' }}>
-                Friends of friends of friends who make games in Vancouver
+                Friends of friends of friends who make games
               </p>
               <p style={{ color: 'white', opacity: '0.75' }}>
                 Email us at:
