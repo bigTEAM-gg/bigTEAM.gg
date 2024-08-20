@@ -41,9 +41,21 @@ function App() {
       <main>
         <MarioBox style={{ minHeight: '100vh' }}>
           <div className="container" style={{ minHeight: '100vh' }}>
-            <div className="box">
+            <div className="box" style={{ maxWidth: '40rem' }}>
               <h1>We're building something big</h1>
-              <p style={{ color: 'white', opacity: '0.75' }}>Coming Soon ...</p>
+              <p style={{ color: 'white', opacity: '0.75' }}>
+                Friends of friends of friends who make games in Vancouver
+              </p>
+              <p style={{ color: 'white', opacity: '0.75' }}>
+                Email us at:
+                {' '}
+                <a
+                 style={{ color: 'yellow', opacity: '0.75', textDecoration: 'underline' }} 
+                 href="mailto:contact@bigteam.gg"
+                >
+                  contact@bigteam.gg
+                </a>
+              </p>
               <p style={{ color: 'white', opacity: '0.75' }}>
                 <a
                  style={{ color: 'yellow', opacity: '0.75', textDecoration: 'underline' }} 
