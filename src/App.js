@@ -44,29 +44,52 @@ function App() {
             <div className="box" style={{ maxWidth: '40rem' }}>
               <h1>We're building something big</h1>
               <p style={{ color: 'white', opacity: '0.75' }}>
-                Friends of friends of friends who make games
+                <i>
+                  Queer-first gamedev community for friends of friends of friends who just make games
+                </i>
               </p>
               <p style={{ color: 'white', opacity: '0.75' }}>
-                Email us at:
-                {' '}
+                Wanna make games too?
+                <br />
                 <a
-                 style={{ color: 'yellow', opacity: '0.75', textDecoration: 'underline' }} 
-                 href="mailto:contact@bigteam.gg"
+                  style={{ color: 'yellow', opacity: '0.75', textDecoration: 'underline' }}
+                  href="https://discord.gg/w6jEtjGuKA"
+                >
+                  Join the community!
+                </a>
+              </p>
+              <p style={{ color: 'white', opacity: '0.75' }}>
+                Just curious?
+                <br />
+                <a
+                  style={{ color: 'yellow', opacity: '0.75', textDecoration: 'underline' }}
+                  href="mailto:contact@bigteam.gg"
                 >
                   contact@bigteam.gg
                 </a>
               </p>
               <p style={{ color: 'white', opacity: '0.75' }}>
+                We're also on:
+              </p>
+              <p>
                 <a
-                 style={{ color: 'yellow', opacity: '0.75', textDecoration: 'underline' }} 
-                 href="https://twitter.com/bigTEAMvg"
+                  style={{ color: 'yellow', opacity: '0.75', textDecoration: 'underline' }}
+                  href="https://bsky.app/profile/bigteam.gg"
+                >
+                  Bluesky
+                </a>
+              </p>
+              <p>
+                <a
+                  style={{ color: 'yellow', opacity: '0.75', textDecoration: 'underline' }}
+                  href="https://twitter.com/bigTEAMvg"
                 >
                   Twitter
                 </a>
               </p>
               <p>
-                <a 
-                  style={{ color: 'yellow', opacity: '0.75', textDecoration: 'underline' }} 
+                <a
+                  style={{ color: 'yellow', opacity: '0.75', textDecoration: 'underline' }}
                   href="https://bigteamvg.itch.io"
                 >
                   Itch
