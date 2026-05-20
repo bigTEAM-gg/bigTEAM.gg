@@ -53,7 +53,7 @@ function App() {
                 <br />
                 <a
                   style={{ color: 'yellow', opacity: '0.75', textDecoration: 'underline' }}
-                  href="https://discord.gg/w6jEtjGuKA"
+                  href="https://discord.gg/ehMa6RYvaB"
                 >
                   Join the community!
                 </a>
